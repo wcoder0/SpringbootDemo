@@ -1,0 +1,26 @@
+server:
+  port: 9000  #tomcat端口
+  servlet:
+    # 项目contextPath
+    context-path: /
+  tomcat:
+    uri-encoding: UTF-8
+    max-connections: 2000
+
+
+spring:
+  application:
+    name: demo
+  kafka:     # 指定kafka 代理地址，可以多个
+    bootstrap-servers: 123.57.40.94:9092
+
+  redis:
+    host: 127.0.0.1
+    port: 6379
+#    password: 123456
+
+
+
+nacos:
+  config:
+    server-addr: 127.0.0.1:8848
